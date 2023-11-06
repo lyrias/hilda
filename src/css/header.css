@@ -1,0 +1,140 @@
+:root{
+	--color-one: #F5F5F5;
+	--color-two: #24292E;
+	--color-three: #EC5252;
+
+	--form-color: #14111A;
+
+	--accent-color: #253556;
+	--border-color: #D8D8D8;
+	
+	--header-height: 60px;
+}
+
+body,html{
+	font-family: 'roboto_condensed_light';
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	color: var(--bs-black);
+	font-size: 16px;
+}
+
+.full-box{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+
+	background-color: #d7e4cd;
+}
+
+.div-bordered{
+	border: 1px solid #E1E1E1;
+}
+/*----------  Text Styles  ----------*/
+.roboto-medium{
+	font-family: 'roboto_medium_regular';
+}
+.roboto-condensed-light{
+	font-family: 'roboto_condensed_light';
+}
+.roboto-condensed-regular{
+	font-family: 'roboto_condensed_regular';
+}
+.poppins-regular{
+	font-family: 'poppinsregular';
+}
+
+/*=========== barra de navegación (web) ===========*/
+.header,
+.header-brand,
+.header-options,
+.header-navbar,
+.header-button{
+	height: var(--header-height);
+	transition: all .3s ease-in-out;
+	box-sizing: border-box;
+}
+.header{
+	background-color: #FFF;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	position: relative;
+
+	color: var(--bs-black);
+}
+.header-brand,
+.header-options{
+	position: absolute;
+	top: 0;
+}
+.header-brand{
+	width: 25%;
+	left: 0;
+}
+.header-brand img{
+	margin-top: 4px;
+	max-width: calc(var(--header-height) - 8px);
+}
+.header-options{
+	width: 100%;
+	right: 0;
+	padding-right: 20px;
+	text-align: right;
+}
+.header-navbar{
+	display: inline-block;
+	width: auto;
+	padding-top: 0;
+	margin-top: 0;
+}
+.header-navbar ul,
+.header-navbar ul li,
+.header-navbar ul li a{
+	width: auto;
+	padding-top: 0;
+	margin-top: 0;
+		text-decoration: none;
+}
+.header-navbar ul li,
+.header-navbar ul li a,
+.header-button,
+.header-button > i{
+	display: inline-block;
+	height: var(--header-height);
+	line-height: var(--header-height);
+	transition: all .3s ease-in-out;
+	position: relative;
+}
+.header-button > i{
+	cursor: pointer;
+	width: 100%;
+}
+.header-navbar ul li a{
+	padding: 0 15px;
+}
+.header-navbar ul li a:hover,
+.header-button:hover{
+	text-decoration: none;
+	color: #f3a2e1;
+}
+.header-navbar ul li a span{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: transparent;
+	height: 5px;
+	transition: all .3s ease-in-out;
+	
+}
+.header-navbar ul li a:hover span{
+	background-color: #f3a2e1;
+}
+.header-button{
+	width: calc(var(--header-height) - calc(var(--header-height) / 4));
+}
+.header-navbar ul li a,
+.header-button{
+	font-size: 20px;
+	color: #042463;
+}
